@@ -1,0 +1,13 @@
+jazz playlist url:
+- https://youtube.com/playlist?list=PL8F6B0753B2CCA128
+jazz save path:
+- data_pre/jazz_m4a
+trance playlist url:
+- https://youtube.com/playlist?list=PLcwauqoxtVJHy3RWPdseAG5PBbJWlPa0h
+trance save path:
+- data_pre/trance_m4a
+
+1st instance (downloading 1-80 jazz)
+- yt-dlp -f 140 -x --audio-format m4a --playlist-start 1 --playlist-end 80 https://youtube.com/playlist?list=PL8F6B0753B2CCA128 -o data_pre/jazz_m4a/%(title)s.%(ext)s
+2nd instance (downloading 1-80 trance)
+- yt-dlp -f 140 -x --audio-format m4a --playlist-start 1 --playlist-end 80 https://youtube.com/playlist?list=PLcwauqoxtVJHy3RWPdseAG5PBbJWlPa0h -o data_pre/trance_m4a/%(title)s.%(ext)s
